@@ -5,4 +5,12 @@
 
 *{
   font-family: 'Cascadia', monospace;
+  scroll-behavior: smooth;
+}
+
+
+.go-up{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
 }

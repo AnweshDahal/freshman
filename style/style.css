@@ -1,2 +1,2 @@
-@font-face{font-family:'Cascadia';src:url(./CascadiaMono.woff2)}*{font-family:'Cascadia', monospace}
+@font-face{font-family:'Cascadia';src:url(./CascadiaMono.woff2)}*{font-family:'Cascadia', monospace;scroll-behavior:smooth}.go-up{position:fixed;bottom:5px;right:5px}
 /*# sourceMappingURL=style.css.map */
