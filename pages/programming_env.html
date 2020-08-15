@@ -73,6 +73,7 @@
         <a href="#introduction" class="list-group-item list-group-item-action">Introduction</a>
         <a href="#programmingLang" class="list-group-item list-group-item-action">Programming Language</a>
         <a href="#firstLang" class="list-group-item list-group-item-action">Choosing Your FirstProgramming Language</a>
+        <a href="#setup" class="list-group-item list-group-item-action">Setting up some Programming Environment</a>
       </div>
       <div class="index-contents col-lg-8 col-sm-12">
         <h4 id="introduction">Introduction</h4>
@@ -159,8 +160,131 @@
         <div class="alert alert-primary">❗ REMEMBER, YOU DO NOT HAVE TO MEMORIZE ALL THE
           SYNTAX OF A PROGRAMMING LANGUAGE TO BE ABLE TO USE IT.
         </div>
+        <h4 id="setup">Setting Up Some Programming Languages</h4>
+        <p class="text-justify">
+        <div class="alert alert-info">I will assume you know how to install programs using installers in Windows
+        </div>
+        Lets setup some programming languages, lets assume you decided to use <strong>Python</strong>
+        . We can start by downloading the Python Interpeter.
+        </p>
+        <div class="alert alert-warning">Make sure, that you download Python 3.x.x</div>
+        <a href="https://www.python.org/" class="btn btn-outline-primary mb-3">Go to Python 3.x Download Page</a>
+        <p class="text-justify">
+          You can select all the default options, however make sure that you select
+          the checkbox that says the following.
+        </p>
+        <form class="container">
+          <input type="checkbox" class="form-check-input" id="addpath">
+          <label for="addpath" class="form-check-label">Add Python to environment variables</label>
+        </form>
+        <br>
+        <figure class="figure">
+          <img src="../img/py_env_pth.png" alt="Python Installation Window" class="figure-img mg-fluid rounded w-100">
+          <figcaption class="figure-caption">The "Add Python to environment variable" option while installing Python
+          </figcaption>
+        </figure>
+        <br>
+        <p class="text-justify">
+          However, if you forgot to select the option you can always re-execute the
+          Python installer and select the <strong>Modify</strong> button.
+        </p>
+        <figure class="figure">
+          <img src="../img/p_modify.png" alt="Python Modify Option" class="figure-img mg-fluid rounded w-100">
+          <figcaption class="figure-caption">Option to "Modify" Python Installation
+          </figcaption>
+        </figure>
+        <br>
+        <p class="text-justified">
+          Proceed throught the installation and select the option. After installation
+          open up a terminal, I will use the <strong>Git Bash</strong>.
+        </p>
+        <figure class="figure">
+          <img src="../img/git_bash.png" alt="Git Bash" class="figure-img mg-fluid rounded w-100">
+          <figcaption class="figure-caption">Git Bash
+          </figcaption>
+        </figure>
+        <br>
+        <p>
+          Now run the following command <br>
+          <code>
+            python -V
+          </code>
+          <br>
+          The version of the Python Installation must be printed on the screen.
+        </p>
+        <figure class="figure">
+          <img src="../img/python_ver.png" alt="Python Version" class="figure-img mg-fluid rounded w-100">
+          <figcaption class="figure-caption">Output "Python 3.8.5"
+          </figcaption>
+        </figure>
+        <p class="text-justify">
+          Congratulations, you installed Python. Next we will install <strong>Java</strong>
+          as an example of Compiled language. To setup Java&trade; you had to install 2 peices
+          of software <strong>JRE</strong>(<em>Java Runtime Environment</em>), it was used to execute
+          codes and programs written in Java, next you need <strong>JDK</strong>
+          (<em>Java Development Kit</em>), it was used to develop (<em>Compile</em>) Java code. However,
+          you can install the latest version of <strong>Java SE</strong> (<em>Java Standard Edition</em>),
+          which allows you to develop and run your Java code.
+        </p>
+        <a href="https://www.oracle.com/java/technologies/javase-downloads.html" class="btn btn-outline-primary mb-4"
+          target="_blank">Go
+          to
+          Java SE 14 Download Page
+        </a>
+        <div class="alert alert-info">Make Sure that you Install the Latest Java SE</div>
+        <p class="text-justify">
+          After you download the JavaSE, run the installer. You can select the default options
+          during installation. After you've finished the installation you have to set the environment variables.
+        </p>
+        <ul>
+          <li>Go to the Java installation directory, this is usually in [<em>C:/Program Files/Java/jdk-[your
+              version]</em>]</li>
+          <li>Inside that directory there will be a folder called <strong>bin</strong> copy the path of that directory
+            <em>You can copy the path of a folder by Right clicking the folder while holding Shift and selecting the
+              "Copy as path" option</em>
+          </li>
+          <li>Search for <strong>Environment Variable</strong> on your Windows&trade; search bar</li>
+          <figure class="figure">
+            <img src="../img/env_var_sr.png" alt="Search Results" class="figure-img mg-fluid rounded w-100">
+            <figcaption class="figure-caption">Edit the system environment variables option
+            </figcaption>
+          </figure>
+          <li>Select the option that says <strong>Edit the system environment variables</strong></li>
+          <li>Select the button that says <strong>Environment Variables...</strong></li>
+          <figure class="figure">
+            <img src="../img/System_prop.png" alt="System Properties" class="figure-img mg-fluid rounded w-100">
+            <figcaption class="figure-caption">System Properties Window
+            </figcaption>
+          </figure>
+          <li>With the <strong>Path</strong> variable selected click on the <strong>Edit</strong> button.</li>
+          <figure class="figure">
+            <img src="../img/sys_path.png" alt="Path Var" class="figure-img mg-fluid rounded w-100">
+            <figcaption class="figure-caption">Environment Variables
+            </figcaption>
+          </figure>
+          <li>The <strong>Edit environment variables</strong> window opens, now you can click on the
+            <strong>New</strong>
+            button and <em>paste</em> the path we copied earlier.
+          </li>
+          <li>
+            Before Exiting, make sure that no other Java entry exists, if it does just move them below
+            the entry we just added. This makes sure that the compiler and the executor both use the same Java version.
+          </li>
+          <li>To check your installation you can go to the terminal and enter the following command.
+            <br>
+            <code>java -version</code> <br>
+            And <br>
+            <code>javac -version</code>
+            <br>
+            The outputs must point to the same Java version.
+          </li>
+          <figure class="figure">
+            <img src="../img/java-ver.png" alt="Java Version" class="figure-img mg-fluid rounded w-100">
+            <figcaption class="figure-caption">Java Versions Match
+            </figcaption>
+          </figure>
+        </ul>
       </div>
-
     </div>
   </div>
   <a href="#introduction" class="btn btn-primary go-up">↑</a>
